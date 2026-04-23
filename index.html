@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>San Francisco 2026 Trip Options</title>
+    <title>San Francisco 2026 Trip Planner</title>
     <meta
       name="description"
-      content="A booking-style family trip planning page for comparing Washington, DC to San Francisco flight options in August 2026."
+      content="A booking-style San Francisco trip planner with flights, stay options near SFO, and a family itinerary."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -24,11 +24,11 @@
       <section class="hero">
         <div class="hero-copy">
           <p class="eyebrow">San Francisco 2026</p>
-          <h1>Compare the best flight options like a booking site</h1>
+          <h1>Plan the whole trip like a polished travel site</h1>
           <p class="lede">
-            Built for your family trip from Washington, DC to San Francisco with
-            <strong>4 travelers leaving August 6, 2026</strong>,
-            <strong>3 returning August 10</strong>, and
+            Flights, hotel, and a realistic day-by-day plan for
+            <strong>4 travelers leaving August 6, 2026</strong>, with
+            <strong>3 returning August 10</strong> and
             <strong>1 returning August 16</strong>.
           </p>
 
@@ -42,402 +42,507 @@
               <strong>San Francisco</strong>
             </div>
             <div class="search-cell">
-              <span class="search-label">Depart</span>
-              <strong>Aug 6, 2026</strong>
+              <span class="search-label">Trip</span>
+              <strong>Aug 6 to Aug 10</strong>
             </div>
             <div class="search-cell">
-              <span class="search-label">Bags</span>
-              <strong>1 carry-on</strong>
+              <span class="search-label">Needs</span>
+              <strong>4 people + carry-on</strong>
             </div>
           </div>
 
           <div class="trip-chips">
-            <span>Nonstop options highlighted</span>
-            <span>Carry-on safe pricing</span>
-            <span>Backup Bay Area airport included</span>
+            <span>Booking-style comparison</span>
+            <span>Family-visit time protected after 4 PM</span>
+            <span>Napa and Yosemite included</span>
           </div>
         </div>
 
         <aside class="hero-panel">
-          <p class="eyebrow">Best current read</p>
-          <h2>Book DCA for ease or IAD for savings</h2>
+          <p class="eyebrow">Fast take</p>
+          <h2>DCA for convenience, IAD for savings, Hotel Aura for the stay</h2>
           <div class="fare-stack">
             <div class="fare-row">
-              <span>DCA nonstop total</span>
-              <strong>$1,952</strong>
+              <span>Best nonstop flight value</span>
+              <strong>IAD to SFO</strong>
             </div>
             <div class="fare-row">
-              <span>IAD nonstop total</span>
-              <strong>$1,712</strong>
+              <span>Best stay near SFO</span>
+              <strong>Hotel Aura SFO</strong>
             </div>
             <div class="fare-row fare-row-accent">
-              <span>Estimated savings with IAD</span>
-              <strong>$240</strong>
+              <span>One itinerary exception</span>
+              <strong>Yosemite is a full day</strong>
             </div>
           </div>
           <p class="panel-note">
-            These are planning estimates using current route signals and baggage
-            rules, so they are best for comparing options before final booking.
+            Most days are planned to free you up around <strong>4 PM</strong>
+            for family visits. Yosemite is the one realistic all-day exception.
           </p>
         </aside>
         <div class="fog-band"></div>
       </section>
 
-      <section class="section">
-        <div class="section-heading">
-          <p class="eyebrow">Top picks</p>
-          <h2>Flight cards with cost, timing, and booking links</h2>
+      <section class="section carousel-shell">
+        <div class="carousel-header">
+          <div class="section-heading section-heading-tight">
+            <p class="eyebrow">Planner</p>
+            <h2>Swipe through flights, stay, and itinerary</h2>
+          </div>
+
+          <div class="carousel-controls">
+            <div class="tab-row" role="tablist" aria-label="Trip planner sections">
+              <button class="tab-button active" type="button" data-slide="0" role="tab" aria-selected="true">
+                Flights
+              </button>
+              <button class="tab-button" type="button" data-slide="1" role="tab" aria-selected="false">
+                Stay Near SFO
+              </button>
+              <button class="tab-button" type="button" data-slide="2" role="tab" aria-selected="false">
+                Itinerary
+              </button>
+            </div>
+
+            <div class="arrow-row">
+              <button class="arrow-button" type="button" data-direction="-1" aria-label="Previous tab">
+                ‹
+              </button>
+              <button class="arrow-button" type="button" data-direction="1" aria-label="Next tab">
+                ›
+              </button>
+            </div>
+          </div>
         </div>
 
-        <div class="booking-grid">
-          <article class="booking-card booking-card-featured">
-            <div class="booking-topline">
-              <span class="badge badge-best">Best family balance</span>
-              <span class="confidence">Nonstop</span>
-            </div>
-            <div class="route-row">
-              <div>
-                <p class="route-airports">DCA → SFO</p>
-                <h3>Reagan to San Francisco nonstop</h3>
-              </div>
-              <div class="price-tag">
-                <span>Est. total</span>
-                <strong>$1,952</strong>
-              </div>
-            </div>
+        <div class="carousel-viewport">
+          <div class="carousel-track">
+            <section class="carousel-slide">
+              <div class="slide-panel">
+                <div class="section-heading">
+                  <p class="eyebrow">Flights</p>
+                  <h2>Best booking options</h2>
+                </div>
 
-            <div class="timing-grid">
-              <div>
-                <span class="timing-label">Typical flight time</span>
-                <strong>6h 29m</strong>
-              </div>
-              <div>
-                <span class="timing-label">Outbound window</span>
-                <strong>Morning or evening</strong>
-              </div>
-              <div>
-                <span class="timing-label">Return style</span>
-                <strong>Nonstop back to DC</strong>
-              </div>
-            </div>
+                <div class="booking-grid">
+                  <article class="booking-card booking-card-featured">
+                    <div class="booking-topline">
+                      <span class="badge badge-best">Best family balance</span>
+                      <span class="confidence">Nonstop</span>
+                    </div>
+                    <div class="route-row">
+                      <div>
+                        <p class="route-airports">DCA → SFO</p>
+                        <h3>Reagan to San Francisco nonstop</h3>
+                      </div>
+                      <div class="price-tag">
+                        <span>Est. total</span>
+                        <strong>$1,952</strong>
+                      </div>
+                    </div>
 
-            <dl class="price-list">
-              <div>
-                <dt>3 travelers, Aug 6 to Aug 10</dt>
-                <dd>$1,434</dd>
-              </div>
-              <div>
-                <dt>1 traveler, Aug 6 to Aug 16</dt>
-                <dd>$518</dd>
-              </div>
-            </dl>
+                    <div class="timing-grid">
+                      <div>
+                        <span class="timing-label">Typical flight time</span>
+                        <strong>6h 29m</strong>
+                      </div>
+                      <div>
+                        <span class="timing-label">Why it wins</span>
+                        <strong>Smoother airport day</strong>
+                      </div>
+                      <div>
+                        <span class="timing-label">Booking feel</span>
+                        <strong>Best for a group decision</strong>
+                      </div>
+                    </div>
 
-            <p class="fine-print">
-              Best if your family wants the smoothest airport experience and a
-              cleaner travel day.
-            </p>
+                    <dl class="price-list">
+                      <div>
+                        <dt>3 travelers, Aug 6 to Aug 10</dt>
+                        <dd>$1,434</dd>
+                      </div>
+                      <div>
+                        <dt>1 traveler, Aug 6 to Aug 16</dt>
+                        <dd>$518</dd>
+                      </div>
+                    </dl>
 
-            <div class="booking-actions">
-              <a
-                class="button button-primary"
-                href="https://www.google.com/travel/flights/flights-from-washington-to-san-francisco.html?gl=US&hl=en-US"
-                target="_blank"
-                rel="noreferrer"
-                >Check on Google Flights</a
-              >
-              <a
-                class="button button-secondary"
-                href="https://www.flightsfrom.com/DCA-SFO"
-                target="_blank"
-                rel="noreferrer"
-                >View DCA nonstop schedule</a
-              >
-            </div>
-          </article>
+                    <div class="booking-actions">
+                      <a
+                        class="button button-primary"
+                        href="https://www.google.com/travel/flights/flights-from-washington-to-san-francisco.html?gl=US&hl=en-US"
+                        target="_blank"
+                        rel="noreferrer"
+                        >Book on Google Flights</a
+                      >
+                      <a
+                        class="button button-secondary"
+                        href="https://www.flightsfrom.com/DCA-SFO"
+                        target="_blank"
+                        rel="noreferrer"
+                        >Route details</a
+                      >
+                    </div>
+                  </article>
 
-          <article class="booking-card">
-            <div class="booking-topline">
-              <span class="badge badge-value">Best value</span>
-              <span class="confidence">Nonstop</span>
-            </div>
-            <div class="route-row">
-              <div>
-                <p class="route-airports">IAD → SFO</p>
-                <h3>Dulles to San Francisco nonstop</h3>
-              </div>
-              <div class="price-tag">
-                <span>Est. total</span>
-                <strong>$1,712</strong>
-              </div>
-            </div>
+                  <article class="booking-card">
+                    <div class="booking-topline">
+                      <span class="badge badge-value">Best value</span>
+                      <span class="confidence">Nonstop</span>
+                    </div>
+                    <div class="route-row">
+                      <div>
+                        <p class="route-airports">IAD → SFO</p>
+                        <h3>Dulles to San Francisco nonstop</h3>
+                      </div>
+                      <div class="price-tag">
+                        <span>Est. total</span>
+                        <strong>$1,712</strong>
+                      </div>
+                    </div>
 
-            <div class="timing-grid">
-              <div>
-                <span class="timing-label">Typical flight time</span>
-                <strong>6h 22m</strong>
-              </div>
-              <div>
-                <span class="timing-label">Outbound window</span>
-                <strong>6:30 AM to 10:10 PM</strong>
-              </div>
-              <div>
-                <span class="timing-label">Return window</span>
-                <strong>8:10 AM to 9:30 PM</strong>
-              </div>
-            </div>
+                    <div class="timing-grid">
+                      <div>
+                        <span class="timing-label">Typical flight time</span>
+                        <strong>5h 42m to 6h 22m</strong>
+                      </div>
+                      <div>
+                        <span class="timing-label">Schedule range</span>
+                        <strong>Broader daily options</strong>
+                      </div>
+                      <div>
+                        <span class="timing-label">Savings</span>
+                        <strong>About $240 less</strong>
+                      </div>
+                    </div>
 
-            <dl class="price-list">
-              <div>
-                <dt>3 travelers, Aug 6 to Aug 10</dt>
-                <dd>$1,254</dd>
-              </div>
-              <div>
-                <dt>1 traveler, Aug 6 to Aug 16</dt>
-                <dd>$458</dd>
-              </div>
-            </dl>
+                    <dl class="price-list">
+                      <div>
+                        <dt>3 travelers, Aug 6 to Aug 10</dt>
+                        <dd>$1,254</dd>
+                      </div>
+                      <div>
+                        <dt>1 traveler, Aug 6 to Aug 16</dt>
+                        <dd>$458</dd>
+                      </div>
+                    </dl>
 
-            <p class="fine-print">
-              Strongest price-driven choice if the airport change from DCA to
-              IAD is acceptable.
-            </p>
+                    <div class="booking-actions">
+                      <a
+                        class="button button-primary"
+                        href="https://www.google.com/travel/flights/flights-from-washington-to-san-francisco.html?gl=US&hl=en-US"
+                        target="_blank"
+                        rel="noreferrer"
+                        >Book on Google Flights</a
+                      >
+                      <a
+                        class="button button-secondary"
+                        href="https://www.flightsfrom.com/IAD-SFO"
+                        target="_blank"
+                        rel="noreferrer"
+                        >Route details</a
+                      >
+                    </div>
+                  </article>
 
-            <div class="booking-actions">
-              <a
-                class="button button-primary"
-                href="https://www.google.com/travel/flights/flights-from-washington-to-san-francisco.html?gl=US&hl=en-US"
-                target="_blank"
-                rel="noreferrer"
-                >Check on Google Flights</a
-              >
-              <a
-                class="button button-secondary"
-                href="https://www.flightsfrom.com/IAD-SFO"
-                target="_blank"
-                rel="noreferrer"
-                >View IAD nonstop schedule</a
-              >
-            </div>
-          </article>
+                  <article class="booking-card">
+                    <div class="booking-topline">
+                      <span class="badge badge-flex">Fallback airport</span>
+                      <span class="confidence">1 stop</span>
+                    </div>
+                    <div class="route-row">
+                      <div>
+                        <p class="route-airports">DCA → SJC</p>
+                        <h3>San Jose backup if SFO spikes</h3>
+                      </div>
+                      <div class="price-tag">
+                        <span>Target</span>
+                        <strong>Under $350</strong>
+                      </div>
+                    </div>
 
-          <article class="booking-card">
-            <div class="booking-topline">
-              <span class="badge badge-flex">Backup airport</span>
-              <span class="confidence">1 stop</span>
-            </div>
-            <div class="route-row">
-              <div>
-                <p class="route-airports">DCA → SJC</p>
-                <h3>Reagan to San Jose with one stop</h3>
-              </div>
-              <div class="price-tag">
-                <span>Target fare</span>
-                <strong>Under $350</strong>
-              </div>
-            </div>
+                    <div class="timing-grid">
+                      <div>
+                        <span class="timing-label">Trip time</span>
+                        <strong>7h 35m to 8h 55m</strong>
+                      </div>
+                      <div>
+                        <span class="timing-label">Tradeoff</span>
+                        <strong>At least 1 stop</strong>
+                      </div>
+                      <div>
+                        <span class="timing-label">Use only if</span>
+                        <strong>You need the cheaper backup</strong>
+                      </div>
+                    </div>
 
-            <div class="timing-grid">
-              <div>
-                <span class="timing-label">Typical trip time</span>
-                <strong>7h 35m to 8h 55m</strong>
+                    <div class="booking-actions">
+                      <a
+                        class="button button-primary"
+                        href="https://www.kayak.com/flight-routes/Washington-Reagan-National-DCA/San-Jose-SJC"
+                        target="_blank"
+                        rel="noreferrer"
+                        >Check on KAYAK</a
+                      >
+                      <a
+                        class="button button-secondary"
+                        href="https://www.google.com/travel/flights"
+                        target="_blank"
+                        rel="noreferrer"
+                        >Open Google Flights</a
+                      >
+                    </div>
+                  </article>
+                </div>
               </div>
-              <div>
-                <span class="timing-label">Stops</span>
-                <strong>At least 1</strong>
-              </div>
-              <div>
-                <span class="timing-label">Why check it</span>
-                <strong>If SFO prices jump</strong>
-              </div>
-            </div>
+            </section>
 
-            <dl class="price-list">
-              <div>
-                <dt>Nearby-date reference fare</dt>
-                <dd>$300 to $322</dd>
-              </div>
-              <div>
-                <dt>Best use</dt>
-                <dd>Budget fallback</dd>
-              </div>
-            </dl>
+            <section class="carousel-slide">
+              <div class="slide-panel">
+                <div class="section-heading">
+                  <p class="eyebrow">Stay Near SFO</p>
+                  <h2>Best safe-value place for 4</h2>
+                </div>
 
-            <p class="fine-print">
-              Useful only if your family is okay with a stop and landing in San
-              Jose instead of SFO.
-            </p>
+                <div class="stay-grid">
+                  <article class="stay-card stay-card-featured">
+                    <div class="booking-topline">
+                      <span class="badge badge-best">Best safe-value pick</span>
+                      <span class="confidence">Recommended</span>
+                    </div>
+                    <h3>Hotel Aura SFO</h3>
+                    <p class="stay-location">South San Francisco / San Bruno area</p>
+                    <p class="fine-print">
+                      This is the strongest choice for your group because it
+                      balances <strong>recent review quality, airport access, and room fit for 4</strong>
+                      better than the ultra-cheap options.
+                    </p>
 
-            <div class="booking-actions">
-              <a
-                class="button button-primary"
-                href="https://www.kayak.com/flight-routes/Washington-Reagan-National-DCA/San-Jose-SJC"
-                target="_blank"
-                rel="noreferrer"
-                >Check on KAYAK</a
-              >
-              <a
-                class="button button-secondary"
-                href="https://www.google.com/travel/flights"
-                target="_blank"
-                rel="noreferrer"
-                >Open Google Flights search</a
-              >
-            </div>
-          </article>
+                    <div class="timing-grid">
+                      <div>
+                        <span class="timing-label">Sleeps</span>
+                        <strong>4 in 2 queen room</strong>
+                      </div>
+                      <div>
+                        <span class="timing-label">Review score</span>
+                        <strong>9.0 / 10 on Expedia</strong>
+                      </div>
+                      <div>
+                        <span class="timing-label">Airport access</span>
+                        <strong>Roughly 10 to 15 min from SFO</strong>
+                      </div>
+                    </div>
+
+                    <ul class="plain-list compact-list">
+                      <li>Free breakfast</li>
+                      <li>Free airport shuttle</li>
+                      <li>Free parking</li>
+                      <li>Recent reviews emphasize clean and quiet stay</li>
+                    </ul>
+
+                    <div class="booking-actions">
+                      <a
+                        class="button button-primary"
+                        href="https://www.expedia.com/San-Francisco-Hotels-Hotel-Aura-SFO.h1080604.Hotel-Information"
+                        target="_blank"
+                        rel="noreferrer"
+                        >Book Hotel Aura</a
+                      >
+                      <a
+                        class="button button-secondary"
+                        href="https://www.google.com/travel/hotels"
+                        target="_blank"
+                        rel="noreferrer"
+                        >Compare on Google Hotels</a
+                      >
+                    </div>
+                  </article>
+
+                  <article class="booking-card">
+                    <div class="booking-topline">
+                      <span class="badge badge-value">Cheaper backup</span>
+                      <span class="confidence">Budget-first</span>
+                    </div>
+                    <h3>Hotel Nova SFO</h3>
+                    <p class="stay-location">South San Francisco</p>
+                    <div class="timing-grid">
+                      <div>
+                        <span class="timing-label">Sleeps</span>
+                        <strong>4 in 2 queen room</strong>
+                      </div>
+                      <div>
+                        <span class="timing-label">Review score</span>
+                        <strong>8.6 / 10 on Expedia</strong>
+                      </div>
+                      <div>
+                        <span class="timing-label">Why not first</span>
+                        <strong>Lower review quality than Aura</strong>
+                      </div>
+                    </div>
+                    <p class="fine-print">
+                      This one is often a bit cheaper, but Aura feels like the
+                      better balance for safety-feeling and family comfort.
+                    </p>
+                    <div class="booking-actions">
+                      <a
+                        class="button button-primary"
+                        href="https://www.expedia.com/San-Francisco-Hotels-Hotel-Nova-SFO-By-FairBridge.h438727.Hotel-Information"
+                        target="_blank"
+                        rel="noreferrer"
+                        >Book Hotel Nova</a
+                      >
+                    </div>
+                  </article>
+
+                  <article class="source-card">
+                    <p class="eyebrow">Why this pick</p>
+                    <h3>What I optimized for</h3>
+                    <ul class="plain-list compact-list">
+                      <li>Within 30 minutes of SFO</li>
+                      <li>Can actually fit 4 people in one room</li>
+                      <li>Recent review quality, not just the lowest sticker price</li>
+                      <li>Easy base for SF, Napa, and airport access</li>
+                    </ul>
+                    <p class="fine-print">
+                      The drive-time estimate is an inference from the hotel’s
+                      airport-area location. Hotel scores and amenities are from
+                      Expedia’s current listings.
+                    </p>
+                  </article>
+                </div>
+              </div>
+            </section>
+
+            <section class="carousel-slide">
+              <div class="slide-panel">
+                <div class="section-heading">
+                  <p class="eyebrow">Itinerary</p>
+                  <h2>Aug 6 to Aug 10 family plan</h2>
+                </div>
+
+                <div class="alert-banner">
+                  Most days are designed so you can pivot to family visits around
+                  <strong>4 PM</strong>. The Yosemite day is the only realistic
+                  all-day exception.
+                </div>
+
+                <div class="itinerary-grid">
+                  <article class="day-card">
+                    <div class="day-topline">
+                      <span class="day-pill">Aug 6</span>
+                      <span class="confidence">Arrival + light SF</span>
+                    </div>
+                    <h3>Easy arrival day</h3>
+                    <ul class="plain-list compact-list">
+                      <li>Check in near SFO and reset</li>
+                      <li>Late morning or early afternoon: Ferry Building and Embarcadero stroll</li>
+                      <li>Optional quick stop: Palace of Fine Arts for photos</li>
+                      <li>Be free by 4 PM for family</li>
+                    </ul>
+                  </article>
+
+                  <article class="day-card">
+                    <div class="day-topline">
+                      <span class="day-pill">Aug 7</span>
+                      <span class="confidence">San Francisco must-see</span>
+                    </div>
+                    <h3>Classic SF before family time</h3>
+                    <ul class="plain-list compact-list">
+                      <li>8:30 AM Golden Gate Bridge vista from Battery East or Crissy Field</li>
+                      <li>10:00 AM Palace of Fine Arts and Presidio Tunnel Tops</li>
+                      <li>12:30 PM Fisherman’s Wharf or Ghirardelli lunch</li>
+                      <li>Head back by 3 PM and be free by 4 PM</li>
+                    </ul>
+                  </article>
+
+                  <article class="day-card">
+                    <div class="day-topline">
+                      <span class="day-pill">Aug 8</span>
+                      <span class="confidence">Napa day</span>
+                    </div>
+                    <h3>Napa without losing the evening</h3>
+                    <ul class="plain-list compact-list">
+                      <li>8:00 AM leave for Napa</li>
+                      <li>9:30 AM Oxbow Public Market breakfast and walk</li>
+                      <li>11:30 AM Yountville stroll or one scenic winery stop</li>
+                      <li>Leave Napa by 2 PM and aim to be free around 4 PM</li>
+                    </ul>
+                  </article>
+
+                  <article class="day-card day-card-exception">
+                    <div class="day-topline">
+                      <span class="day-pill">Aug 9</span>
+                      <span class="confidence">Full-day Yosemite</span>
+                    </div>
+                    <h3>Yosemite day trip</h3>
+                    <ul class="plain-list compact-list">
+                      <li>5:30 AM leave for Yosemite to beat traffic</li>
+                      <li>Must-see stops: Tunnel View, Yosemite Valley, Valley View</li>
+                      <li>Lower Yosemite Fall is iconic, but it is often dry by late July or August</li>
+                      <li>Expect to return in the evening, not by 4 PM</li>
+                    </ul>
+                  </article>
+
+                  <article class="day-card">
+                    <div class="day-topline">
+                      <span class="day-pill">Aug 10</span>
+                      <span class="confidence">Departure split day</span>
+                    </div>
+                    <h3>Easy closeout near the airport</h3>
+                    <ul class="plain-list compact-list">
+                      <li>Slow breakfast in Burlingame or Millbrae</li>
+                      <li>Optional short walk at Coyote Point or Bayfront area</li>
+                      <li>3 returning travelers head for flights</li>
+                      <li>The remaining traveler can still use the late afternoon for family</li>
+                    </ul>
+                  </article>
+
+                  <article class="source-card">
+                    <p class="eyebrow">Source notes</p>
+                    <h3>Planning reality checks</h3>
+                    <ul class="plain-list compact-list">
+                      <li>Yosemite says no reservation is required in 2026, but entry fees still apply</li>
+                      <li>The park recommends arriving before 9 AM to reduce traffic</li>
+                      <li>Lower Yosemite Fall is often dry from late July or August through October</li>
+                    </ul>
+                    <div class="booking-actions">
+                      <a
+                        class="button button-secondary"
+                        href="https://www.nps.gov/yose/planyourvisit/index.htm?vm=r"
+                        target="_blank"
+                        rel="noreferrer"
+                        >Yosemite planning</a
+                      >
+                      <a
+                        class="button button-secondary"
+                        href="https://www.visitnapavalley.com/"
+                        target="_blank"
+                        rel="noreferrer"
+                        >Visit Napa Valley</a
+                      >
+                    </div>
+                  </article>
+                </div>
+              </div>
+            </section>
+          </div>
         </div>
-      </section>
 
-      <section class="section">
-        <div class="section-heading">
-          <p class="eyebrow">What the schedule means</p>
-          <h2>Time and duration notes</h2>
+        <div class="dot-row" aria-label="Carousel position">
+          <button class="dot active" type="button" data-slide="0" aria-label="Go to Flights"></button>
+          <button class="dot" type="button" data-slide="1" aria-label="Go to Stay Near SFO"></button>
+          <button class="dot" type="button" data-slide="2" aria-label="Go to Itinerary"></button>
         </div>
-
-        <div class="comparison-grid">
-          <article class="metric-card">
-            <span class="metric-title">DCA to SFO</span>
-            <strong>6h 29m</strong>
-            <p>Daily nonstop route operated by Alaska and United.</p>
-          </article>
-          <article class="metric-card">
-            <span class="metric-title">IAD to SFO</span>
-            <strong>5h 42m to 6h 22m</strong>
-            <p>Multiple daily United nonstops with the broadest schedule range.</p>
-          </article>
-          <article class="metric-card">
-            <span class="metric-title">DCA to SJC</span>
-            <strong>7h 35m plus</strong>
-            <p>No nonstop service, so this is only the backup savings play.</p>
-          </article>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="section-heading">
-          <p class="eyebrow">Carry-on logic</p>
-          <h2>Which prices are real for your bag setup</h2>
-        </div>
-        <div class="table-wrap">
-          <table>
-            <thead>
-              <tr>
-                <th>Option</th>
-                <th>Carry-on included?</th>
-                <th>Stops</th>
-                <th>Booking note</th>
-                <th>Verdict</th>
-              </tr>
-            </thead>
-            <tbody>
-              <tr>
-                <td>DCA to SFO on Alaska Saver</td>
-                <td>Yes</td>
-                <td>Nonstop</td>
-                <td>Safe to compare as a true carry-on fare</td>
-                <td>Great family option</td>
-              </tr>
-              <tr>
-                <td>IAD to SFO on United economy</td>
-                <td>Yes when you avoid basic economy</td>
-                <td>Nonstop</td>
-                <td>Check fare rules before checkout</td>
-                <td>Best current value</td>
-              </tr>
-              <tr>
-                <td>DCA to SJC on standard economy</td>
-                <td>Usually yes</td>
-                <td>1 stop</td>
-                <td>Works best as a price-pressure backup</td>
-                <td>Useful backup to compare</td>
-              </tr>
-              <tr class="danger-row">
-                <td>Frontier low fare</td>
-                <td>No, carry-on costs extra</td>
-                <td>Usually 1 stop</td>
-                <td>Headline price can be misleading</td>
-                <td>Often not truly cheapest</td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
-      </section>
-
-      <section class="section notes-layout">
-        <article class="note-panel">
-          <p class="eyebrow">How to book</p>
-          <h2>Fastest path for your family</h2>
-          <ul class="plain-list">
-            <li>Start with the DCA and IAD Google Flights links.</li>
-            <li>Compare the nonstop timing blocks before looking only at price.</li>
-            <li>Use SJC only if the SFO total jumps too high.</li>
-            <li>Skip fares that do not clearly include the carry-on you want.</li>
-          </ul>
-        </article>
-
-        <article class="note-panel">
-          <p class="eyebrow">Sources</p>
-          <h2>Reference links</h2>
-          <ul class="link-list">
-            <li>
-              <a
-                href="https://www.google.com/travel/flights/flights-from-washington-to-san-francisco.html?gl=US&hl=en-US"
-                target="_blank"
-                rel="noreferrer"
-                >Google Flights Washington to San Francisco</a
-              >
-            </li>
-            <li>
-              <a href="https://www.flightsfrom.com/DCA-SFO" target="_blank" rel="noreferrer"
-                >FlightsFrom DCA to SFO</a
-              >
-            </li>
-            <li>
-              <a href="https://www.flightsfrom.com/IAD-SFO" target="_blank" rel="noreferrer"
-                >FlightsFrom IAD to SFO</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://www.kayak.com/flight-routes/Washington-Reagan-National-DCA/San-Jose-SJC"
-                target="_blank"
-                rel="noreferrer"
-                >KAYAK DCA to SJC</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://www.alaskaair.com/content/travel-info/flight-experience/saver"
-                target="_blank"
-                rel="noreferrer"
-                >Alaska Saver carry-on policy</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://www.united.com/en/us/fly/travel/inflight/basic-economy.html"
-                target="_blank"
-                rel="noreferrer"
-                >United basic economy</a
-              >
-            </li>
-            <li>
-              <a
-                href="https://faq.flyfrontier.com/help/bags-seats-general-info-how-much-does-frontier-charge-for-bags"
-                target="_blank"
-                rel="noreferrer"
-                >Frontier bag fees</a
-              >
-            </li>
-          </ul>
-        </article>
       </section>
 
       <section class="section footer-note">
         <p>
-          Updated <strong>April 22, 2026</strong>. Flight prices and exact times
-          can shift, so use the booking links above to confirm before purchase.
+          Sources used for the stay and itinerary include Expedia hotel
+          listings, Yosemite National Park, and Visit Napa Valley. Travel times
+          and hotel prices can move, so use the booking links before you commit.
         </p>
       </section>
     </main>
+
+    <script src="./script.js"></script>
   </body>
 </html>
