@@ -3,64 +3,108 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>DC to San Francisco Family Flight Options</title>
+    <title>San Francisco 2026 Trip Options</title>
+    <meta
+      name="description"
+      content="A polished family trip planning page for comparing Washington, DC to San Francisco flight options in August 2026."
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Source+Serif+4:wght@600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body>
+    <div class="sky-glow sky-glow-left"></div>
+    <div class="sky-glow sky-glow-right"></div>
+
     <main class="page-shell">
       <section class="hero">
-        <p class="eyebrow">Trip snapshot</p>
-        <h1>Washington, DC to San Francisco family flight planner</h1>
-        <p class="hero-copy">
-          Outbound for 4 travelers on <strong>August 6, 2026</strong>.
-          Return split:
-          <strong>3 travelers on August 10</strong> and
-          <strong>1 traveler on August 16</strong>.
-          This page focuses on fares that work with
-          <strong>one carry-on bag</strong>.
-        </p>
-        <div class="hero-grid">
-          <article class="hero-stat">
-            <span class="stat-label">Best overall</span>
-            <strong>DCA nonstop</strong>
-            <span>Best for convenience and family-friendly timing</span>
-          </article>
-          <article class="hero-stat">
-            <span class="stat-label">Best value</span>
-            <strong>IAD nonstop</strong>
-            <span>Best current August route pricing signal</span>
-          </article>
-          <article class="hero-stat">
-            <span class="stat-label">Avoid trap fares</span>
-            <strong>Frontier basic</strong>
-            <span>Looks cheap, but carry-on costs extra</span>
-          </article>
+        <div class="hero-copy">
+          <p class="eyebrow">San Francisco 2026</p>
+          <h1>Flight options your family can actually compare at a glance</h1>
+          <p class="lede">
+            A clean side-by-side look at the best Washington, DC to San
+            Francisco choices for <strong>4 travelers departing August 6</strong>,
+            with <strong>3 returning August 10</strong> and
+            <strong>1 returning August 16</strong>.
+          </p>
+
+          <div class="trip-chips">
+            <span>From DCA or IAD</span>
+            <span>One carry-on in the plan</span>
+            <span>August 2026</span>
+          </div>
+
+          <div class="hero-summary">
+            <article>
+              <span class="summary-label">Most convenient</span>
+              <strong>DCA nonstop</strong>
+              <span>Best for family ease and airport simplicity</span>
+            </article>
+            <article>
+              <span class="summary-label">Best value</span>
+              <strong>IAD nonstop</strong>
+              <span>Lowest strong nonstop estimate right now</span>
+            </article>
+            <article>
+              <span class="summary-label">Watch out</span>
+              <strong>Frontier low fare</strong>
+              <span>Usually loses value once carry-on fees are added</span>
+            </article>
+          </div>
         </div>
+
+        <aside class="hero-panel">
+          <div class="panel-header">
+            <p class="eyebrow">Best current call</p>
+            <h2>DCA for comfort, IAD for price</h2>
+          </div>
+
+          <div class="fare-stack">
+            <div class="fare-row">
+              <span>Family total if all 4 use DCA nonstop</span>
+              <strong>$1,952</strong>
+            </div>
+            <div class="fare-row">
+              <span>Family total if all 4 use IAD nonstop</span>
+              <strong>$1,712</strong>
+            </div>
+            <div class="fare-row fare-row-accent">
+              <span>Estimated nonstop savings with IAD</span>
+              <strong>$240</strong>
+            </div>
+          </div>
+
+          <p class="panel-note">
+            These are current route-level planning estimates based on recent
+            fare signals and airline baggage rules, not locked live booking
+            quotes.
+          </p>
+        </aside>
+
+        <div class="fog-band"></div>
       </section>
 
       <section class="section">
         <div class="section-heading">
-          <p class="eyebrow">Recommended plan</p>
-          <h2>Start with these booking scenarios</h2>
+          <p class="eyebrow">Recommended options</p>
+          <h2>Three clear ways to book this trip</h2>
         </div>
+
         <div class="card-grid">
-          <article class="option-card featured">
-            <div class="card-topline">
-              <span class="badge badge-best">Best balance</span>
+          <article class="option-card option-card-featured">
+            <div class="option-topline">
+              <span class="badge badge-best">Best family balance</span>
               <span class="confidence">High confidence</span>
             </div>
-            <h3>DCA to SFO nonstop for all 4</h3>
+            <h3>DCA to SFO nonstop</h3>
             <p>
-              Easiest plan for a family decision. Reagan is simpler to reach,
-              and this route has daily nonstop service on Alaska and United.
-              Carry-on is included on Alaska Saver and on non-basic United
-              economy fares.
+              This is the easiest version to show the family. Reagan is simpler
+              to reach, nonstop service is available, and the overall travel day
+              feels cleaner for a group.
             </p>
             <dl class="price-list">
               <div>
@@ -72,26 +116,25 @@
                 <dd>$518</dd>
               </div>
               <div class="total">
-                <dt>Estimated family total</dt>
+                <dt>Total estimate</dt>
                 <dd>$1,952</dd>
               </div>
             </dl>
             <p class="fine-print">
-              Built from DCA August nonstop price signals and daily nonstop
-              schedule data, not a locked live fare.
+              Best when convenience matters more than squeezing out every last
+              dollar.
             </p>
           </article>
 
           <article class="option-card">
-            <div class="card-topline">
-              <span class="badge badge-value">Lowest nonstop estimate</span>
+            <div class="option-topline">
+              <span class="badge badge-value">Best value nonstop</span>
               <span class="confidence">High confidence</span>
             </div>
-            <h3>IAD to SFO nonstop for all 4</h3>
+            <h3>IAD to SFO nonstop</h3>
             <p>
-              Better August nonstop pricing signal than DCA. It is the best
-              current route-level value if the family is comfortable using
-              Dulles.
+              This is the strongest value pick if the family is open to Dulles.
+              It keeps the trip straightforward while trimming the total cost.
             </p>
             <dl class="price-list">
               <div>
@@ -103,54 +146,79 @@
                 <dd>$458</dd>
               </div>
               <div class="total">
-                <dt>Estimated family total</dt>
+                <dt>Total estimate</dt>
                 <dd>$1,712</dd>
               </div>
             </dl>
             <p class="fine-print">
-              Best choice if total price matters a little more than airport
-              convenience.
+              Strongest recommendation if total cost is the deciding factor.
             </p>
           </article>
 
           <article class="option-card">
-            <div class="card-topline">
-              <span class="badge badge-flex">Stretch savings</span>
+            <div class="option-topline">
+              <span class="badge badge-flex">Backup savings play</span>
               <span class="confidence">Medium confidence</span>
             </div>
             <h3>DCA to SJC with one stop</h3>
             <p>
-              A nearby-date Bay Area deal showed DCA to San Jose around
-              $302 round trip with Delta. This could be worth checking if the
-              family is willing to fly into the Bay Area instead of only SFO.
+              A nearby-date Bay Area fare showed roughly
+              <strong>$302 round trip</strong> to San Jose. This is the right
+              backup check if prices jump on SFO.
             </p>
             <dl class="price-list">
               <div>
-                <dt>Reference fare near your dates</dt>
+                <dt>Reference deal near your dates</dt>
                 <dd>$302 each</dd>
               </div>
               <div>
-                <dt>Likely tradeoff</dt>
-                <dd>1 stop + airport flexibility</dd>
+                <dt>Tradeoff</dt>
+                <dd>1 stop + different airport</dd>
               </div>
               <div class="total">
-                <dt>Use as a price target</dt>
-                <dd>Under $350 is strong</dd>
+                <dt>Good target price</dt>
+                <dd>Under $350</dd>
               </div>
             </dl>
             <p class="fine-print">
-              This is a nearby-date comparison point, not a direct estimate for
-              every traveler on your exact split itinerary.
+              Worth it only if your family is fine with a stop and a Bay Area
+              airport alternative.
             </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section comparison-strip">
+        <div class="section-heading">
+          <p class="eyebrow">Quick read</p>
+          <h2>How the options stack up</h2>
+        </div>
+
+        <div class="comparison-grid">
+          <article class="metric-card">
+            <span class="metric-title">Cheapest nonstop estimate</span>
+            <strong>$1,712</strong>
+            <p>IAD for all 4 travelers</p>
+          </article>
+          <article class="metric-card">
+            <span class="metric-title">Most polished travel day</span>
+            <strong>DCA nonstop</strong>
+            <p>Best airport convenience and simplest family pitch</p>
+          </article>
+          <article class="metric-card">
+            <span class="metric-title">Budget trap to avoid</span>
+            <strong>Frontier basic</strong>
+            <p>Low headline fares often exclude the carry-on you want</p>
           </article>
         </div>
       </section>
 
       <section class="section">
         <div class="section-heading">
-          <p class="eyebrow">Why these numbers</p>
-          <h2>Carry-on-safe cost logic</h2>
+          <p class="eyebrow">Carry-on logic</p>
+          <h2>What counts as a real price for this trip</h2>
         </div>
+
         <div class="table-wrap">
           <table>
             <thead>
@@ -167,63 +235,50 @@
                 <td>DCA to SFO on Alaska Saver</td>
                 <td>Yes</td>
                 <td>Nonstop</td>
-                <td>Approx. August nonstop pricing around $478</td>
+                <td>Approx. August nonstop price signal around $478</td>
                 <td>Great family option</td>
               </tr>
               <tr>
                 <td>IAD to SFO on United economy</td>
                 <td>Yes when excluding basic</td>
                 <td>Nonstop</td>
-                <td>Approx. August nonstop pricing around $418</td>
+                <td>Approx. August nonstop price signal around $418</td>
                 <td>Best current value</td>
               </tr>
               <tr>
                 <td>DCA to SJC on Delta or American</td>
                 <td>Usually yes in standard economy</td>
                 <td>1 stop</td>
-                <td>Nearby-date summer fare around $302</td>
-                <td>Worth checking to save money</td>
+                <td>Nearby-date Bay Area fare around $302</td>
+                <td>Useful backup to compare</td>
               </tr>
               <tr class="danger-row">
                 <td>Frontier low fare</td>
                 <td>No, carry-on costs extra</td>
                 <td>Usually 1 stop</td>
                 <td>Headline fare can start near $165</td>
-                <td>Usually not truly cheapest after bags</td>
+                <td>Often not truly cheapest after bag fees</td>
               </tr>
             </tbody>
           </table>
         </div>
       </section>
 
-      <section class="section split-layout">
-        <article class="panel">
-          <p class="eyebrow">My call</p>
-          <h2>What I’d tell the family</h2>
+      <section class="section notes-layout">
+        <article class="note-panel">
+          <p class="eyebrow">Family recommendation</p>
+          <h2>What I would say in one minute</h2>
           <ul class="plain-list">
-            <li>
-              Book <strong>DCA nonstop</strong> if you want the easiest airport
-              and least stressful day-of-travel plan.
-            </li>
-            <li>
-              Book <strong>IAD nonstop</strong> if the price difference stays
-              meaningful, especially if it saves roughly $200 to $250 total.
-            </li>
-            <li>
-              Only chase Frontier if everyone is traveling with a
-              <strong>personal item only</strong>. Once a carry-on is added, the
-              “cheap” fare can lose.
-            </li>
-            <li>
-              If fares spike, check <strong>SJC</strong> as a backup airport
-              and compare against SFO before booking.
-            </li>
+            <li>DCA nonstop is the easiest version to say yes to as a group.</li>
+            <li>IAD nonstop is the smartest money choice if the airport swap is fine.</li>
+            <li>SJC is the right backup check if SFO jumps too high.</li>
+            <li>Frontier is only useful if everyone is packing a personal item only.</li>
           </ul>
         </article>
 
-        <article class="panel">
-          <p class="eyebrow">Source links</p>
-          <h2>Open the references</h2>
+        <article class="note-panel">
+          <p class="eyebrow">Sources</p>
+          <h2>Reference links</h2>
           <ul class="link-list">
             <li>
               <a
@@ -238,7 +293,7 @@
                 href="https://www.flightsfrom.com/DCA-SFO"
                 target="_blank"
                 rel="noreferrer"
-                >FlightsFrom DCA to SFO nonstop schedule + August price signal</a
+                >FlightsFrom DCA to SFO</a
               >
             </li>
             <li>
@@ -246,7 +301,7 @@
                 href="https://www.flightsfrom.com/IAD-SFO"
                 target="_blank"
                 rel="noreferrer"
-                >FlightsFrom IAD to SFO nonstop schedule + August price signal</a
+                >FlightsFrom IAD to SFO</a
               >
             </li>
             <li>
@@ -254,7 +309,7 @@
                 href="https://www.kayak.com/flight-routes/Washington-Reagan-National-DCA/San-Francisco-Bay-Area-zzXIH"
                 target="_blank"
                 rel="noreferrer"
-                >KAYAK DCA to San Francisco Bay Area</a
+                >KAYAK DCA to Bay Area</a
               >
             </li>
             <li>
@@ -275,18 +330,10 @@
             </li>
             <li>
               <a
-                href="https://www.flyfrontier.com/travel/travel-info/bag-options/?mobile=false"
-                target="_blank"
-                rel="noreferrer"
-                >Frontier bag options</a
-              >
-            </li>
-            <li>
-              <a
                 href="https://www.united.com/en/us/fly/travel/inflight/basic-economy.html"
                 target="_blank"
                 rel="noreferrer"
-                >United basic economy info</a
+                >United basic economy</a
               >
             </li>
           </ul>
@@ -295,9 +342,9 @@
 
       <section class="section footer-note">
         <p>
-          Built on <strong>April 22, 2026</strong>. Flight prices change fast,
-          so treat these as family decision numbers and recheck before purchase.
-          The page is intentionally conservative about carry-on rules.
+          Updated <strong>April 22, 2026</strong>. Flight prices move quickly,
+          so this page should be used as a polished comparison snapshot before
+          final booking.
         </p>
       </section>
     </main>
